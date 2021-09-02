@@ -2,8 +2,8 @@ import java.util.Collections;
 import java.util.PriorityQueue;
 
 public class RunningMedian {
-    static PriorityQueue<Integer> maxHeap = new PriorityQueue<>();
-    static PriorityQueue<Integer> minHeap = new PriorityQueue<>(Collections.reverseOrder());
+    static PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Collections.reverseOrder());
+    static PriorityQueue<Integer> minHeap = new PriorityQueue<>();
 
 
     public static void main(String[] args) {
