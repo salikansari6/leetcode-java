@@ -34,7 +34,7 @@ public class PrintLCS {
 
         while(i >  0 || j > 0){
             if(text1.charAt(i - 1) == text2.charAt(j - 1)){
-                resultBuilder.append(text1.charAt(i - 1));
+                resultBuilder.insert(0,text1.charAt(i - 1));
                 i--;
                 j--;
             }
@@ -48,7 +48,7 @@ public class PrintLCS {
             }
         }
 
-        System.out.println(resultBuilder.reverse().toString());
+        System.out.println(resultBuilder.toString());
 
 
     }
